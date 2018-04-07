@@ -7,24 +7,81 @@
 	</head>
 	<body>
 		<header>
-			<content>
+			<content id="cabecera">
 			<svg width="300px" height="50px" vieBox="0 0 300 50">
 				<image xlink:href="img/logo.svg" width="200px" height="120px" />
 			</svg>
 			</content>
 			<h1>Curriculum Vitae</h1>
 		</header>
-		<content>
+		<content id="datosPersonal">
 			<h3>Andrés Muñoz Zamora</h3>
 			<h3>10-Octubre-1991</h3>
 			<h3>Guadalajara - Jalisco</h3>
 		</content>
-		<content>
+		<content id="menu">
 			<ul>
 				<li><a href="Index.html">Inicio</a></li>
 				<li><a href="Educacion.html">Educación</a></li>
 				<li><a href="Experiencia.html">Experiencia</a></li>
 			</ul>
 		</content>
+		<content id="educacion">
+			<table border="1">
+				<thead>
+					<tr>
+						<th>Año</th>
+						<th>Institución</th>
+						<th>Lugar</th>
+						<th>¿Culminó?</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2009</td>
+						<td>UABCS</td>
+						<td>La Paz</td>
+						<td>Si</td>
+					</tr>
+					<tr>
+						<td>2006</td>
+						<td>CBTIS #230</td>
+						<td>La Paz</td>
+						<td>Si</td>
+					</tr>
+				</tbody>
+			</table>
+		</content>
+		<content id="formularioEstudios">
+			<form name="Estudios" autocomplete="on">
+				<fieldset>
+					<legend>Agregar Estudios</legend>
+					<p><label for="año">Año:</label></p>
+					<select name="año">
+						<option>2010</option>
+						<option>2011</option>
+						<option>2012</option>
+						<option>2013</option>
+						<option>2014</option>
+						<option>2015</option>
+						<option>2016</option>
+						<option>2017</option>
+						<option>2018</option>						
+					</select>
+					<p><label for="institucion">Institución:</label></p>
+					<input type="text" name="institucion" required="">
+					<p><label for="lugar">Lugar:</label></p>
+					<input type="text" name="lugar">
+					<p><label for="culmino">¿Culminó?:</label></p>
+					<p>si<input type="radio" name="culmino"> no<input type="radio" name="culmino"></p>
+				</fieldset>
+			</form>			
+		</content>
+		<footer>
+			<h3>Información de contacto.</h3>
+			<p>e-mail: muza.andres@gmail.com.</p>
+			<p>telefono: (+52) 331-841-6035.</p>
+			<p>facebook: Andres Mu Za.</p>
+		</footer>
 	</body>
 </html>
